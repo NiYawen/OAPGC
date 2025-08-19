@@ -3,7 +3,7 @@
 OAPGC was constructed by integrating 12,616 public metagenomic samples, 933 newly sequenced airway metagenomes, and 64,169 isolate genomes from relevant habitats. 99,215 non-redundant strain-level genomes were reconstructed, which were subsequently clustered into 2,474 species-level clusters. In addition, by incorporating Global gut Microbiome Reference (GMR) collection, we further extended our analysis to explore the distribution and potential roles of oral microbes within the gut environment.</font>
 
 <br>
-The customized Kraken2 and Bracken database of OAPGC , integrated with GMR, is available at  https://zenodo.org/records/16880410
+The customized Kraken2 and Bracken database of OAPGC , integrated with GMR, is available at https://zenodo.org/records/16880410
 <br>
 
 ------
@@ -19,9 +19,9 @@ To maximize the recovery of microbial genomes and improve genome quality, metage
   > MetaBinner v1.4.4<br>
   > SemiBin2 v2.0.2<br>
   > VAMB v3.0.2<br>
-  > flow_bin_metabinner.sh<br>
-  > flow_bin_semibin2.sh<br>
-  > flow_bin_vamb.sh<br>
+  > [flow_bin_metabinner.sh](https://github.com/NiYawen/OAPGC/blob/main/pipelines/flow_bin_metabinner.sh)<br>
+  > [flow_bin_semibin2.sh](https://github.com/NiYawen/OAPGC/blob/main/pipelines/flow_bin_semibin2.sh)<br>
+  > [flow_bin_vamb.sh](https://github.com/NiYawen/OAPGC/blob/main/pipelines/flow_bin_vamb.sh)<br>
 
 - Step 1: MetaBAT 2
 
@@ -53,7 +53,7 @@ Based on the 2474 species-level genome bins (SGBs) in the OAPGC, we reconstructe
   > Bracken 2.8<br>
   > Python 3.8.16<br>
   > GNU parallel 20201122<br>
-  > kraken_build.py<br>
+  > [kraken_build.py](https://github.com/NiYawen/OAPGC/blob/main/pipelines/kraken_build.py)<br>
 
 - Step 1: Create customized Kraken2 and Bracken databases, including  prokaryotic species from the OAPGC, all viral operational taxonomic units (vOTUs) from the OAVGC (https://github.com/RChGO/AVGC), and the human reference genome.
 
@@ -75,7 +75,7 @@ Based on the 2474 species-level genome bins (SGBs) in the OAPGC, we reconstructe
 
 <br>
 
-*Note that the associated scripts nested within the shell scripts are also available on pipeline.*
+*Note that the associated scripts nested within the shell scripts are also available on [pipelines](https://github.com/NiYawen/OAPGC/tree/main/pipelines).
 
 <br>
 
@@ -84,4 +84,5 @@ Based on the 2474 species-level genome bins (SGBs) in the OAPGC, we reconstructe
 <br>
 
 <font size=2> Correspondence and requests for materials should be addressed to nywdoctor@163.com </font>
+
 
